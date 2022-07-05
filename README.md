@@ -41,6 +41,17 @@ behaviors, which will work for this application.
   code up. We'll need to know this when you submit your solution because it will
   help adjust our expectations.
 
+### How we evaluate this project
+- There are several architectural problems within the app (component structure, data flow, data management, etc). **Please choose at least one to work on.**
+- The code is *not* [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself). **Please reduce duplication in at least one area of the code by introducing an abstraction.**
+- There are a number of other things you may choose to work on, depending on your available time and interest:
+  - Bugs in the code
+  - Fixing of inconsistent patterns in the code
+  - Addressing areas where best practices are not being followed (in usage of third-party libraries, for example)
+- We **do** value unit tests for newly-added code.
+- We **do** value seeing good development habits and clear communication skills.
+- We do **not** put any weight on changes/improvements to the folder structure.
+
 ### Submitting your work
 
 - We work in GitHub, so we want to review your code there too. However, please
