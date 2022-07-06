@@ -3,7 +3,8 @@
 We are excited to see how you build frontend software, but we understand you're
 probably pretty busy. Instead of asking you to develop something from scratch,
 please spend a reasonable amount of time—hours, not days—refactoring some of the code in this
-application. Just make it better, in any way that you see fit. Our goal is to
+application. Just make it better, in any way that you see fit. See details on [how we evaluate 
+your submission](#how-we-evaluate-this-project) below. Our goal is to
 see how you improve existing code that you haven't encountered before.
 
 ### About the application
@@ -49,8 +50,7 @@ behaviors, which will work for this application.
   - Fixing of inconsistent patterns in the code
   - Addressing areas where best practices are not being followed (in usage of third-party libraries, for example)
 - We **do** value unit tests for newly-added code.
-- We **do** value seeing good development habits and clear communication skills.
-- We do **not** put any weight on changes/improvements to the folder structure.
+- We **do** value seeing good development habits and clear communication skills. Treat this PR like you would treat one at work!
 
 ### Submitting your work
 
