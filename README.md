@@ -39,8 +39,9 @@ behaviors, which will work for this application.
 - The application is deliberately written to be "not very clean code". It is **not** representative of good code at Appcues.
 - This README is intentionally sparse, so you'll have to read the code to understand how the application works.
 - There are some things to avoid right from the get-go. 
-  - Don't spend the time to remove Redux from the project. If you believe an improvement can be made by removing it instead include it in the PR writeup. 
+  - Don't spend the time to remove Redux from the project. 
   - We are less concerned about seeing things like code reorganization, styling improvements, or new features.
+  - If you believe an improvement can be made on any point above include it in the PR writeup.
 - **Please keep track of the amount of time you spend** working on cleaning this
   code up. We'll need to know this when you submit your solution because it will
   help adjust our expectations.
