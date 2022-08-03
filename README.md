@@ -2,7 +2,7 @@
 
 We are excited to see how you build frontend software, but we understand you're
 probably pretty busy. Instead of asking you to develop something from scratch,
-please spend a reasonable amount of time—hours, not days—refactoring some of the code in this
+please spend 4-6 hours refactoring some of the code in this
 application. Just make it better, in any way that you see fit. See details on [how we evaluate
 your submission](#how-we-evaluate-this-project) below. Our goal is to
 see how you improve existing code that you haven't encountered before.
@@ -38,6 +38,10 @@ behaviors, which will work for this application.
 
 - The application is deliberately written to be "not very clean code". It is **not** representative of good code at Appcues.
 - This README is intentionally sparse, so you'll have to read the code to understand how the application works.
+- There are some things to avoid right from the get-go. 
+  - Don't spend the time to remove Redux from the project. 
+  - We are less concerned about seeing things like code reorganization, styling improvements, or new features.
+  - If you believe an improvement can be made on any point above include it in the PR writeup.
 - **Please keep track of the amount of time you spend** working on cleaning this
   code up. We'll need to know this when you submit your solution because it will
   help adjust our expectations.
@@ -68,6 +72,7 @@ behaviors, which will work for this application.
   - **The pull request should include**:
     - a description of what you changed and why
     - how long you spent on the project
+    - if you continued to work on the project, what would you focus on next
   - Invite the GitHub user `@appcues-interviews` as a [collaborator](https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-your-github-user-account/inviting-collaborators-to-a-personal-repository) on your private repository.
 
 Good luck with the assignment, and we hope you have fun with it!
