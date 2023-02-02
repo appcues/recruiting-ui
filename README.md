@@ -3,7 +3,7 @@
 We are excited to see how you build frontend software, but we understand you're
 probably pretty busy. Instead of asking you to develop something from scratch,
 please spend 4-6 hours refactoring some of the code in this
-application. Just make it better, in any way that you see fit. See details on [how we evaluate
+application. See details on [how we evaluate
 your submission](#how-we-evaluate-this-project) below. Our goal is to
 see how you improve existing code that you haven't encountered before.
 
@@ -56,6 +56,7 @@ behaviors, which will work for this application.
   - Addressing areas where best practices are not being followed (in usage of third-party libraries, for example)
 - We **do** value unit tests for newly-added code.
 - We **do** value seeing good development habits and clear communication skills. Treat this PR like you would treat one at work!
+- We do value your knowledge and wisdom beyond the time limit provided. Please include a write-up within the PR for what future improvements within the project you would encourage and why. 
 
 ### Submitting your work
 
