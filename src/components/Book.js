@@ -1,9 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components/macro';
-
-import { Anchor, Title, Author, Description } from '../styles/common';
+import { Link } from 'react-router-dom';
 import { SaveButton } from './Buttons';
+
+const Anchor = styled(Link)`
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+`;
 
 const Details = styled.section`
   flex: 1;
@@ -51,9 +56,39 @@ const Wrapper = styled.article`
   }}
 `;
 
+const Title = styled.h3`
+  color: #242a35;
+  font-family: Palatino, serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 8px 0;
+  text-transform: capitalize;
+`;
+
+const Author = styled.p`
+  font-family: Palatino, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  margin: 0 0 8px 0;
+  color: #717883;
+`;
+
+const Description = styled.p`
+  color: #242a35;
+  font-family: Palatino, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 1em 0 2em 0;
+`;
+
 export default function Book({ book, onSave, onRemove, saved, view }) {
   return (
-    <Wrapper key={book.id} view={view}>
+    <Wrapper key={book.id} view={view} data-testid="book-component">
       <Cover>
         <Anchor to={`/books/${book.id}`}>
           <img src={book.image_url} alt={book.title} />
@@ -65,7 +100,11 @@ export default function Book({ book, onSave, onRemove, saved, view }) {
         </Title>
         <Author>{book.author}</Author>
         {view === 'list' && <Description>{book.description}</Description>}
-        <SaveButton onSave={onSave} onRemove={onRemove} saved={saved} />
+        <SaveButton
+          onSave={() => onSave(book)}
+          onRemove={() => onRemove(book)}
+          saved={saved}
+        />
       </Details>
     </Wrapper>
   );
