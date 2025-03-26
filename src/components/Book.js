@@ -2,14 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components/macro';
 
-import { Link } from '@reach/router';
+import { Anchor, Title, Author, Description } from '../styles/common';
 import { SaveButton } from './Buttons';
-
-const Anchor = styled(Link)`
-  text-decoration: none;
-  font: inherit;
-  color: inherit;
-`;
 
 const Details = styled.section`
   flex: 1;
@@ -57,36 +51,6 @@ const Wrapper = styled.article`
   }}
 `;
 
-const Title = styled.h3`
-  color: #242a35;
-  font-family: Palatino, serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 22px;
-  margin: 0 0 8px 0;
-  text-transform: capitalize;
-`;
-
-const Author = styled.p`
-  font-family: Palatino, serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
-  margin: 0 0 8px 0;
-  color: #717883;
-`;
-
-const Description = styled.p`
-  color: #242a35;
-  font-family: Palatino, serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  margin: 1em 0 2em 0;
-`;
-
 export default function Book({ book, onSave, onRemove, saved, view }) {
   return (
     <Wrapper key={book.id} view={view}>
@@ -108,9 +72,20 @@ export default function Book({ book, onSave, onRemove, saved, view }) {
 }
 
 Book.propTypes = {
-  book: PropTypes.objectOf(PropTypes.string),
+  book: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    author: PropTypes.string.isRequired,
+    description: PropTypes.string,
+    image_url: PropTypes.string.isRequired,
+  }).isRequired,
   saved: PropTypes.bool,
-  onSave: PropTypes.func,
-  onRemove: PropTypes.func,
-  view: PropTypes.string,
+  onSave: PropTypes.func.isRequired,
+  onRemove: PropTypes.func.isRequired,
+  view: PropTypes.oneOf(['grid', 'list']),
+};
+
+Book.defaultProps = {
+  saved: false,
+  view: 'grid',
 };
