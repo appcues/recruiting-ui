@@ -28,8 +28,8 @@ if (!semver.satisfies(currentVersion, requiredVersion)) {
     '\u001B[36m%s\u001B[0m',
     'Please use nvm to install the correct version:'
   );
-  console.error('\u001B[36m%s\u001B[0m', '  nvm install 20');
-  console.error('\u001B[36m%s\u001B[0m', '  nvm use 20');
+  console.error('\u001B[36m%s\u001B[0m', '  nvm install 22');
+  console.error('\u001B[36m%s\u001B[0m', '  nvm use 22');
   process.exit(1);
 }
 
