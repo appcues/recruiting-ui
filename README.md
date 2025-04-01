@@ -45,6 +45,7 @@ behaviors, which will work for this application.
 - **Please keep track of the amount of time you spend** working on cleaning this
   code up. We'll need to know this when you submit your solution because it will
   help adjust our expectations.
+- Candidates are permitted to use any tools, including AI assistance, during this project. However, be prepared to discuss and explain all aspects of your code during the evaluation process.
 
 ### How we evaluate this project
 
